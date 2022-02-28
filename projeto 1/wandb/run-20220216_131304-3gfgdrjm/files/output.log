@@ -1,0 +1,173 @@
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 340 entries, 0 to 339
+Data columns (total 16 columns):
+ #   Column                     Non-Null Count  Dtype
+---  ------                     --------------  -----
+ 0   Class                      340 non-null    int64
+ 1   Specimen Number            340 non-null    int64
+ 2   Eccentricity               340 non-null    float64
+ 3   Aspect Ratio               340 non-null    float64
+ 4   Elongation                 340 non-null    float64
+ 5   Solidity                   340 non-null    float64
+ 6   Stochastic Convexity       340 non-null    float64
+ 7   Isoperimetric Factor       340 non-null    float64
+ 8   Maximal Indentation Depth  340 non-null    float64
+ 9   Lobedness                  340 non-null    float64
+ 10  Average Intensity          340 non-null    float64
+ 11  Average Contrast           340 non-null    float64
+ 12  Smoothness                 340 non-null    float64
+ 13  Third moment               340 non-null    float64
+ 14  Uniformity                 340 non-null    float64
+ 15  Entropy                    340 non-null    float64
+dtypes: float64(14), int64(2)
+memory usage: 42.6 KB
+INFO : Dataset features names: (340, 16)
+INFO : (340,)
+INFO : <class 'pandas.core.series.Series'>
+INFO : (340, 15)
+INFO : <class 'pandas.core.frame.DataFrame'>
+INFO : (255, 15)
+INFO : (255,)
+INFO : (85, 15)
+INFO : (85,)
+INFO : Training set score: 0.7019607843137254
+Test set score: 0.4
+INFO : Training set score: 0.7019607843137254
+INFO : Training set score: 0.4
+INFO : Training set score: 0.7019607843137254
+INFO : Training set score: 0.4
+Fitting 5 folds for each of 36 candidates, totalling 180 fits
+INFO : Instanciando SVM
+INFO : Treinando SVM
+/home/saraselis/.local/lib/python3.8/site-packages/sklearn/model_selection/_search.py:292: UserWarning: The total space of parameters 36 is smaller than n_iter=200. Running 36 iterations. For exhaustive searches, use GridSearchCV.
+  warnings.warn(
+/home/saraselis/.local/lib/python3.8/site-packages/sklearn/model_selection/_split.py:676: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+[1m {'cv': None, 'error_score': nan, 'estimator__memory': None, 'estimator__steps': [('preprocessing', StandardScaler()), ('classifier', SVC())], 'estimator__verbose': False, 'estimator__preprocessing': StandardScaler(), 'estimator__classifier': SVC(), 'estimator__preprocessing__copy': True, 'estimator__preprocessing__with_mean': True, 'estimator__preprocessing__with_std': True, 'estimator__classifier__C': 1.0, 'estimator__classifier__break_ties': False, 'estimator__classifier__cache_size': 200, 'estimator__classifier__class_weight': None, 'estimator__classifier__coef0': 0.0, 'estimator__classifier__decision_function_shape': 'ovr', 'estimator__classifier__degree': 3, 'estimator__classifier__gamma': 'scale', 'estimator__classifier__kernel': 'rbf', 'estimator__classifier__max_iter': -1, 'estimator__classifier__probability': False, 'estimator__classifier__random_state': None, 'estimator__classifier__shrinking': True, 'estimator__classifier__tol': 0.001, 'estimator__classifier__verbose': False, 'estimator': Pipeline(steps=[('preprocessing', StandardScaler()), ('classifier', SVC())]), 'n_iter': 200, 'n_jobs': None, 'param_distributions': {'preprocessing': [StandardScaler(), MinMaxScaler(), Normalizer(), MaxAbsScaler()], 'classifier__C': [10, 100, 1000], 'classifier__kernel': ['linear', 'rbf', 'sigmoid']}, 'pre_dispatch': '2*n_jobs', 'random_state': None, 'refit': True, 'return_train_score': False, 'scoring': None, 'verbose': 1}
+[1m {'preprocessing': StandardScaler(), 'classifier__kernel': 'linear', 'classifier__C': 10}
+INFO : Predict SVM
+INFO : Parametros SVM
+INFO : Best Params SVM
+[1mFitting 5 folds for each of 36 candidates, totalling 180 fits
+INFO : Instanciando SVM
+INFO : Treinando SVM
+/home/saraselis/.local/lib/python3.8/site-packages/sklearn/model_selection/_search.py:292: UserWarning: The total space of parameters 36 is smaller than n_iter=200. Running 36 iterations. For exhaustive searches, use GridSearchCV.
+  warnings.warn(
+/home/saraselis/.local/lib/python3.8/site-packages/sklearn/model_selection/_split.py:676: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+[1m {'cv': None, 'error_score': nan, 'estimator__memory': None, 'estimator__steps': [('preprocessing', StandardScaler()), ('classifier', SVC())], 'estimator__verbose': False, 'estimator__preprocessing': StandardScaler(), 'estimator__classifier': SVC(), 'estimator__preprocessing__copy': True, 'estimator__preprocessing__with_mean': True, 'estimator__preprocessing__with_std': True, 'estimator__classifier__C': 1.0, 'estimator__classifier__break_ties': False, 'estimator__classifier__cache_size': 200, 'estimator__classifier__class_weight': None, 'estimator__classifier__coef0': 0.0, 'estimator__classifier__decision_function_shape': 'ovr', 'estimator__classifier__degree': 3, 'estimator__classifier__gamma': 'scale', 'estimator__classifier__kernel': 'rbf', 'estimator__classifier__max_iter': -1, 'estimator__classifier__probability': False, 'estimator__classifier__random_state': None, 'estimator__classifier__shrinking': True, 'estimator__classifier__tol': 0.001, 'estimator__classifier__verbose': False, 'estimator': Pipeline(steps=[('preprocessing', StandardScaler()), ('classifier', SVC())]), 'n_iter': 200, 'n_jobs': None, 'param_distributions': {'preprocessing': [StandardScaler(), MinMaxScaler(), Normalizer(), MaxAbsScaler()], 'classifier__C': [10, 100, 1000], 'classifier__kernel': ['linear', 'rbf', 'sigmoid']}, 'pre_dispatch': '2*n_jobs', 'random_state': None, 'refit': True, 'return_train_score': False, 'scoring': None, 'verbose': 1}
+[1m {'preprocessing': StandardScaler(), 'classifier__kernel': 'linear', 'classifier__C': 10}
+[1mCPU times: user 1.89 s, sys: 16.9 ms, total: 1.91 s
+[1mWall time: 1.89 s
+INFO : Predict SVM
+INFO : Parametros SVM
+INFO : Best Params SVM
+INFO : Ok
+INFO : Busca finalizada
+[1m{'preprocessing': StandardScaler(), 'classifier__kernel': 'linear', 'classifier__C': 10}
+[1mPipeline(steps=[('preprocessing', StandardScaler()),
+[1m                ('classifier', SVC(C=10, kernel='linear'))])
+INFO : Pipeline(steps=[('preprocessing', StandardScaler()),
+                ('classifier', SVC(C=10, kernel='linear'))])
+/home/saraselis/.local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/saraselis/.local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/saraselis/.local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+[1m              precision    recall  f1-score   support
+[1m           1       0.75      1.00      0.86         3
+[1m           2       0.75      0.75      0.75         4
+[1m           3       1.00      0.50      0.67         2
+[1m           4       0.20      1.00      0.33         1
+[1m           5       0.25      1.00      0.40         1
+[1m           6       0.80      0.80      0.80         5
+[1m           7       1.00      0.67      0.80         6
+[1m           8       1.00      1.00      1.00         3
+[1m           9       0.75      1.00      0.86         3
+[1m          10       1.00      1.00      1.00         4
+[1m          11       1.00      1.00      1.00         1
+[1m          12       0.67      0.80      0.73         5
+[1m          13       0.71      1.00      0.83         5
+[1m          14       1.00      0.67      0.80         3
+[1m          15       1.00      1.00      1.00         4
+[1m          22       1.00      0.40      0.57         5
+[1m          23       0.50      1.00      0.67         1
+[1m          24       1.00      0.20      0.33         5
+[1m          25       0.00      0.00      0.00         0
+[1m          26       0.50      0.20      0.29         5
+[1m          27       0.50      0.50      0.50         2
+[1m          28       0.00      0.00      0.00         1
+[1m          29       1.00      1.00      1.00         2
+[1m          30       1.00      0.50      0.67         2
+[1m          31       0.75      1.00      0.86         3
+[1m          32       0.80      1.00      0.89         4
+[1m          33       1.00      1.00      1.00         1
+[1m          34       1.00      0.50      0.67         2
+[1m          35       0.00      0.00      0.00         1
+[1m          36       1.00      1.00      1.00         1
+[1m    accuracy                           0.73        85
+[1m   macro avg       0.73      0.72      0.68        85
+[1mweighted avg       0.82      0.73      0.73        85
+/home/saraselis/.local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/saraselis/.local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/saraselis/.local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+INFO : (340, 15)
+INFO : <class 'pandas.core.frame.DataFrame'>
+INFO : (340, 15)
+INFO : <class 'pandas.core.frame.DataFrame'>
+INFO : Specimen Number                int64
+Eccentricity                 float64
+Aspect Ratio                 float64
+Elongation                   float64
+Solidity                     float64
+Stochastic Convexity         float64
+Isoperimetric Factor         float64
+Maximal Indentation Depth    float64
+Lobedness                    float64
+Average Intensity            float64
+Average Contrast             float64
+Smoothness                   float64
+Third moment                 float64
+Uniformity                   float64
+Entropy                      float64
+dtype: object
+INFO : (340,)
+INFO : <class 'pandas.core.series.Series'>
+INFO : int64
+[1mRequirement already satisfied: seaborn in /home/saraselis/.cache/pypoetry/virtualenvs/atividade-IiNZE6RD-py3.8/lib/python3.8/site-packages (0.11.2)
+[1mRequirement already satisfied: numpy>=1.15 in /home/saraselis/.cache/pypoetry/virtualenvs/atividade-IiNZE6RD-py3.8/lib/python3.8/site-packages (from seaborn) (1.22.2)
+[1mRequirement already satisfied: matplotlib>=2.2 in /home/saraselis/.cache/pypoetry/virtualenvs/atividade-IiNZE6RD-py3.8/lib/python3.8/site-packages (from seaborn) (3.5.1)
+[1mRequirement already satisfied: pandas>=0.23 in /home/saraselis/.cache/pypoetry/virtualenvs/atividade-IiNZE6RD-py3.8/lib/python3.8/site-packages (from seaborn) (1.4.1)
+[1mRequirement already satisfied: scipy>=1.0 in /home/saraselis/.cache/pypoetry/virtualenvs/atividade-IiNZE6RD-py3.8/lib/python3.8/site-packages (from seaborn) (1.6.1)
+[1mRequirement already satisfied: pyparsing>=2.2.1 in /home/saraselis/.cache/pypoetry/virtualenvs/atividade-IiNZE6RD-py3.8/lib/python3.8/site-packages (from matplotlib>=2.2->seaborn) (3.0.7)
+[1mRequirement already satisfied: packaging>=20.0 in /home/saraselis/.cache/pypoetry/virtualenvs/atividade-IiNZE6RD-py3.8/lib/python3.8/site-packages (from matplotlib>=2.2->seaborn) (21.3)
+[1mRequirement already satisfied: kiwisolver>=1.0.1 in /home/saraselis/.cache/pypoetry/virtualenvs/atividade-IiNZE6RD-py3.8/lib/python3.8/site-packages (from matplotlib>=2.2->seaborn) (1.3.2)
+[1mRequirement already satisfied: python-dateutil>=2.7 in /home/saraselis/.cache/pypoetry/virtualenvs/atividade-IiNZE6RD-py3.8/lib/python3.8/site-packages (from matplotlib>=2.2->seaborn) (2.8.2)
+[1mRequirement already satisfied: cycler>=0.10 in /home/saraselis/.cache/pypoetry/virtualenvs/atividade-IiNZE6RD-py3.8/lib/python3.8/site-packages (from matplotlib>=2.2->seaborn) (0.11.0)
+[1mRequirement already satisfied: fonttools>=4.22.0 in /home/saraselis/.cache/pypoetry/virtualenvs/atividade-IiNZE6RD-py3.8/lib/python3.8/site-packages (from matplotlib>=2.2->seaborn) (4.29.1)
+[1mRequirement already satisfied: pillow>=6.2.0 in /home/saraselis/.cache/pypoetry/virtualenvs/atividade-IiNZE6RD-py3.8/lib/python3.8/site-packages (from matplotlib>=2.2->seaborn) (9.0.1)
+[1mRequirement already satisfied: pytz>=2020.1 in /home/saraselis/.cache/pypoetry/virtualenvs/atividade-IiNZE6RD-py3.8/lib/python3.8/site-packages (from pandas>=0.23->seaborn) (2021.3)
+[1mRequirement already satisfied: six>=1.5 in /home/saraselis/.cache/pypoetry/virtualenvs/atividade-IiNZE6RD-py3.8/lib/python3.8/site-packages (from python-dateutil>=2.7->matplotlib>=2.2->seaborn) (1.16.0)
+[33m[1mWARNING: You are using pip version 21.3.1; however, version 22.0.3 is available.
+[33m[1mYou should consider upgrading via the '/home/saraselis/.cache/pypoetry/virtualenvs/atividade-IiNZE6RD-py3.8/bin/python -m pip install --upgrade pip' command.
+Requirement already satisfied: matplotlib in /home/saraselis/.cache/pypoetry/virtualenvs/atividade-IiNZE6RD-py3.8/lib/python3.8/site-packages (3.5.1)
+Requirement already satisfied: pyparsing>=2.2.1 in /home/saraselis/.cache/pypoetry/virtualenvs/atividade-IiNZE6RD-py3.8/lib/python3.8/site-packages (from matplotlib) (3.0.7)
+Requirement already satisfied: numpy>=1.17 in /home/saraselis/.cache/pypoetry/virtualenvs/atividade-IiNZE6RD-py3.8/lib/python3.8/site-packages (from matplotlib) (1.22.2)
+Requirement already satisfied: pillow>=6.2.0 in /home/saraselis/.cache/pypoetry/virtualenvs/atividade-IiNZE6RD-py3.8/lib/python3.8/site-packages (from matplotlib) (9.0.1)
+Requirement already satisfied: python-dateutil>=2.7 in /home/saraselis/.cache/pypoetry/virtualenvs/atividade-IiNZE6RD-py3.8/lib/python3.8/site-packages (from matplotlib) (2.8.2)
+Requirement already satisfied: cycler>=0.10 in /home/saraselis/.cache/pypoetry/virtualenvs/atividade-IiNZE6RD-py3.8/lib/python3.8/site-packages (from matplotlib) (0.11.0)
+Requirement already satisfied: packaging>=20.0 in /home/saraselis/.cache/pypoetry/virtualenvs/atividade-IiNZE6RD-py3.8/lib/python3.8/site-packages (from matplotlib) (21.3)
+Requirement already satisfied: kiwisolver>=1.0.1 in /home/saraselis/.cache/pypoetry/virtualenvs/atividade-IiNZE6RD-py3.8/lib/python3.8/site-packages (from matplotlib) (1.3.2)
+Requirement already satisfied: fonttools>=4.22.0 in /home/saraselis/.cache/pypoetry/virtualenvs/atividade-IiNZE6RD-py3.8/lib/python3.8/site-packages (from matplotlib) (4.29.1)
+Requirement already satisfied: six>=1.5 in /home/saraselis/.cache/pypoetry/virtualenvs/atividade-IiNZE6RD-py3.8/lib/python3.8/site-packages (from python-dateutil>=2.7->matplotlib) (1.16.0)
+[33mWARNING: You are using pip version 21.3.1; however, version 22.0.3 is available.
+[33mYou should consider upgrading via the '/home/saraselis/.cache/pypoetry/virtualenvs/atividade-IiNZE6RD-py3.8/bin/python -m pip install --upgrade pip' command.
+/home/saraselis/.local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/saraselis/.local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/saraselis/.local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.

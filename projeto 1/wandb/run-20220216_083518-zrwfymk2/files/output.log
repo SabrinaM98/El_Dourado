@@ -1,0 +1,95 @@
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 340 entries, 0 to 339
+Data columns (total 16 columns):
+ #   Column                     Non-Null Count  Dtype
+---  ------                     --------------  -----
+ 0   Class                      340 non-null    int64
+ 1   Specimen Number            340 non-null    int64
+ 2   Eccentricity               340 non-null    float64
+ 3   Aspect Ratio               340 non-null    float64
+ 4   Elongation                 340 non-null    float64
+ 5   Solidity                   340 non-null    float64
+ 6   Stochastic Convexity       340 non-null    float64
+ 7   Isoperimetric Factor       340 non-null    float64
+ 8   Maximal Indentation Depth  340 non-null    float64
+ 9   Lobedness                  340 non-null    float64
+ 10  Average Intensity          340 non-null    float64
+ 11  Average Contrast           340 non-null    float64
+ 12  Smoothness                 340 non-null    float64
+ 13  Third moment               340 non-null    float64
+ 14  Uniformity                 340 non-null    float64
+ 15  Entropy                    340 non-null    float64
+dtypes: float64(14), int64(2)
+memory usage: 42.6 KB
+INFO : Dataset features names: (340, 16)
+INFO : (340,)
+INFO : <class 'pandas.core.series.Series'>
+INFO : (340, 15)
+INFO : <class 'pandas.core.frame.DataFrame'>
+INFO : (255, 15)
+INFO : (255,)
+INFO : (85, 15)
+INFO : (85,)
+Training set score: 0.7019607843137254
+Test set score: 0.4
+WARNING : Aconteceu algum problema...
+CRITICAL : name 'X_treino' is not defined
+INFO : Busca finalizada
+CPU times: user 3.83 ms, sys: 2.24 ms, total: 6.07 ms
+Wall time: 3.67 ms
+INFO : Instanciando SVM
+WARNING : Aconteceu algum problema...
+CRITICAL : name 'RandomizedSearchCV' is not defined
+INFO : Busca finalizada
+CPU times: user 8.57 ms, sys: 0 ns, total: 8.57 ms
+Wall time: 5.23 ms
+Fitting 5 folds for each of 10 candidates, totalling 50 fits
+CPU times: user 541 ms, sys: 0 ns, total: 541 ms
+Wall time: 530 ms
+INFO : Instanciando SVM
+INFO : Treinando SVM
+/home/saraselis/.local/lib/python3.8/site-packages/sklearn/model_selection/_split.py:676: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+INFO : Predict SVM
+INFO : Parametros SVM
+WARNING : Aconteceu algum problema...
+CRITICAL : name 'RED' is not defined
+INFO : Busca finalizada
+INFO : Instanciando SVM
+INFO : Treinando SVM
+/home/saraselis/.local/lib/python3.8/site-packages/sklearn/model_selection/_split.py:676: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+INFO : Predict SVM
+INFO : Parametros SVM
+INFO : Best Params SVM
+INFO : Ok
+INFO : Busca finalizada
+Fitting 5 folds for each of 10 candidates, totalling 50 fits
+[1m {'cv': None, 'error_score': nan, 'estimator__memory': None, 'estimator__steps': [('preprocessing', StandardScaler()), ('classifier', SVC())], 'estimator__verbose': False, 'estimator__preprocessing': StandardScaler(), 'estimator__classifier': SVC(), 'estimator__preprocessing__copy': True, 'estimator__preprocessing__with_mean': True, 'estimator__preprocessing__with_std': True, 'estimator__classifier__C': 1.0, 'estimator__classifier__break_ties': False, 'estimator__classifier__cache_size': 200, 'estimator__classifier__class_weight': None, 'estimator__classifier__coef0': 0.0, 'estimator__classifier__decision_function_shape': 'ovr', 'estimator__classifier__degree': 3, 'estimator__classifier__gamma': 'scale', 'estimator__classifier__kernel': 'rbf', 'estimator__classifier__max_iter': -1, 'estimator__classifier__probability': False, 'estimator__classifier__random_state': None, 'estimator__classifier__shrinking': True, 'estimator__classifier__tol': 0.001, 'estimator__classifier__verbose': False, 'estimator': Pipeline(steps=[('preprocessing', StandardScaler()), ('classifier', SVC())]), 'n_iter': 10, 'n_jobs': None, 'param_distributions': {'preprocessing': [StandardScaler(), MinMaxScaler(), Normalizer(), MaxAbsScaler()], 'classifier__C': [10, 100, 1000], 'classifier__kernel': ['linear', 'rbf', 'sigmoid']}, 'pre_dispatch': '2*n_jobs', 'random_state': None, 'refit': True, 'return_train_score': False, 'scoring': None, 'verbose': 1}
+[1m {'preprocessing': StandardScaler(), 'classifier__kernel': 'linear', 'classifier__C': 10}
+[1mCPU times: user 570 ms, sys: 0 ns, total: 570 ms
+[1mWall time: 559 ms
+INFO : Instanciando SVM
+INFO : Treinando SVM
+/home/saraselis/.local/lib/python3.8/site-packages/sklearn/model_selection/_split.py:676: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+WARNING : Aconteceu algum problema...
+CRITICAL : Invalid parameter classifier_kernel for estimator Pipeline(steps=[('preprocessing', StandardScaler()), ('classifier', SVC())]). Check the list of available parameters with `estimator.get_params().keys()`.
+INFO : Busca finalizada
+[1mFitting 5 folds for each of 10 candidates, totalling 50 fits
+[1mCPU times: user 14.6 ms, sys: 1.56 ms, total: 16.2 ms
+[1mWall time: 10.8 ms
+INFO : Instanciando SVM
+INFO : Treinando SVM
+/home/saraselis/.local/lib/python3.8/site-packages/sklearn/model_selection/_split.py:676: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+INFO : Predict SVM
+INFO : Parametros SVM
+INFO : Best Params SVM
+INFO : Ok
+INFO : Busca finalizada
+[1mFitting 5 folds for each of 10 candidates, totalling 50 fits
+[1m {'cv': None, 'error_score': nan, 'estimator__memory': None, 'estimator__steps': [('preprocessing', StandardScaler()), ('classifier', SVC())], 'estimator__verbose': False, 'estimator__preprocessing': StandardScaler(), 'estimator__classifier': SVC(), 'estimator__preprocessing__copy': True, 'estimator__preprocessing__with_mean': True, 'estimator__preprocessing__with_std': True, 'estimator__classifier__C': 1.0, 'estimator__classifier__break_ties': False, 'estimator__classifier__cache_size': 200, 'estimator__classifier__class_weight': None, 'estimator__classifier__coef0': 0.0, 'estimator__classifier__decision_function_shape': 'ovr', 'estimator__classifier__degree': 3, 'estimator__classifier__gamma': 'scale', 'estimator__classifier__kernel': 'rbf', 'estimator__classifier__max_iter': -1, 'estimator__classifier__probability': False, 'estimator__classifier__random_state': None, 'estimator__classifier__shrinking': True, 'estimator__classifier__tol': 0.001, 'estimator__classifier__verbose': False, 'estimator': Pipeline(steps=[('preprocessing', StandardScaler()), ('classifier', SVC())]), 'n_iter': 10, 'n_jobs': None, 'param_distributions': {'preprocessing': [StandardScaler(), MinMaxScaler(), Normalizer(), MaxAbsScaler()], 'classifier__C': [10, 100, 1000], 'classifier__kernel': ['linear', 'rbf', 'sigmoid']}, 'pre_dispatch': '2*n_jobs', 'random_state': None, 'refit': True, 'return_train_score': False, 'scoring': None, 'verbose': 1}
+[1m {'preprocessing': StandardScaler(), 'classifier__kernel': 'linear', 'classifier__C': 1000}
+[1mCPU times: user 608 ms, sys: 0 ns, total: 608 ms
+[1mWall time: 597 ms

@@ -1,0 +1,21 @@
+{
+    "os": "Linux-5.10.16.3-microsoft-standard-WSL2-x86_64-with-glibc2.29",
+    "python": "3.8.10",
+    "heartbeatAt": "2022-02-16T16:13:06.401176",
+    "startedAt": "2022-02-16T16:13:04.950020",
+    "docker": null,
+    "gpu": "NVIDIA GeForce GTX 1650 Ti",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [
+        "-f",
+        "/home/saraselis/.local/share/jupyter/runtime/kernel-eae0bd05-84f2-4c88-9fea-65923da8e7a2.json"
+    ],
+    "state": "running",
+    "program": "load_data_leaf.ipynb",
+    "root": "/mnt/c/Users/saras/Documents/eldorado",
+    "host": "LAPTOP-597KU6OG",
+    "username": "saraselis",
+    "executable": "/usr/bin/python3"
+}
